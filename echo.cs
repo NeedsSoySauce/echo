@@ -22,7 +22,7 @@ namespace NeedsSoySauce.Functions
 
         [FunctionName("echo")]
         public static async Task<IActionResult> Run(
-            [HttpTrigger(AuthorizationLevel.Function, Route = null)] HttpRequest req,
+            [HttpTrigger(AuthorizationLevel.Anonymous, Route = null)] HttpRequest req,
             ILogger log)
         {   
 
